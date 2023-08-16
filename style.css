@@ -1,0 +1,230 @@
+*{
+    margin: 0px;    /* to make any default margins and others absent */
+    padding: 0px;
+    font-family: 'Caveat', cursive;
+
+}
+.container{
+    width: 100%;/* to obtain maximum width */
+    height: 100vh;/* to obtain maximum height */
+    background-color: white;
+    position: relative;/* to make any other element within this div */
+
+}
+.navbar{
+    display: flex;/* to display side by side */
+    justify-content: space-between;/* to create space between the two child */
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;/* makes the item at the exact center of a div vertically */
+
+}
+.logo{
+    width: 100px;
+
+}
+.listitem{
+    display: inline-block;/* to display in one line */
+    list-style: none;/*to not make the disappeared dots appear in any other browser  */
+    margin: 10px 20px; /* to make space bw the list contents */
+}
+.links{
+    text-decoration: none;/* to make underline disappear */
+    color: black;
+    font-weight: bold; /* to give width and bold */
+}
+/* tag:pseudoclass{prperty:value} */
+.links:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.e1{
+    color: brown;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;/* to work margins etc for a link */
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.title-img{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.title-img img{
+    position: absolute;/* place child div corresponding to parent div */
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);/* to nullify the scroll effect in x direction */
+    transition: bottom 1s , left 2s;/* to make the movement smooth */
+}
+
+    .title-img:hover #shape{
+        bottom: 70px;/* to move it up when hovering */
+    }
+    .title-img:hover #girl{
+        left: 40%;/* to move the girl left to 40% */
+    }
+    #about{
+        margin: 18% 8% 0px 8%;
+    }
+    .heading{
+        text-align: center;/* to center the contents */
+    }
+    .heading h2{    /* descendant selector */
+        font-size: 30px;
+
+    }
+    .heading span{
+        font-size: 20px;
+        color: olive;
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);/* to specify how many columns or rows, 1fr=255px */
+        gap: 2rem;/* to create gap between the two columns,1rem=16px */
+        margin-top: 2rem;
+    }
+    .about-img img{
+        width: 80%;
+        border-radius: 2rem;
+    }
+    .about-details{
+        font-size: 19px;
+        font-weight: 400;
+        text-align: justify;/* to makw starting and ending on the same line */
+    }
+    .informations{
+        margin-top:2rem ;
+    }
+    .info-box{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .info-box span{
+        margin-left: 2rem;
+    }
+
+
+
+
+
+
+
+
+    
+
+#skills{
+   margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 88%;
+}
+.react-bar{
+    background-color: orange;
+    width: 89%;
+}
+.js-bar{
+    background-color: orange;
+    width: 85%;
+}
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red); 
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.5s ;/* to give animation */
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+}
+.up-arrow:hover i{
+    color: white;
+
+}
+html{
+    scroll-behavior: smooth;/* to make the scroll smooth */
+}
